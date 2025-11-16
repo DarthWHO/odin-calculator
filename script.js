@@ -63,20 +63,18 @@ function handleClick(event) {
         needsClearing = true;
       }
     } else {
-      if (!needsClearing) {
-        if (firstNumber != 0) {
-          secondNumber = Number(resultDisplay.textContent);
-          resultDisplay.textContent = doMath(
-            firstNumber,
-            secondNumber,
-            currentAction
-          );
-          firstNumber = Number(resultDisplay.textContent);
-        }
+      if (firstNumber != 0) {
+        secondNumber = Number(resultDisplay.textContent);
+        resultDisplay.textContent = doMath(
+          firstNumber,
+          secondNumber,
+          currentAction
+        );
         firstNumber = Number(resultDisplay.textContent);
-        currentAction = element.id;
-        needsClearing = true;
       }
+      firstNumber = Number(resultDisplay.textContent);
+      currentAction = element.id;
+      needsClearing = true;
     }
   } else {
     if (needsClearing) {

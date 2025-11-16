@@ -6,19 +6,25 @@
     <title>Odin Calculator</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="calculator">
       <div class="brand">
-        <h1>Scott's Calculator</h1>
+        <h1>Simple Calculator</h1>
       </div>
       <div class="display-container">
         <div class="display">
-          <h2 id="result"></h2>
+          <p id="result"></p>
         </div>
         <div class="backspace">
-          <button class="btn-delete btn" id="equal">=</button>
+          <button class="btn-number btn" id="del">&#x2B05;</button>
+        </div>
+                <div class="action">
+          <button class="btn-action btn" id="c">AC</button>
         </div>
       </div>
 
@@ -26,13 +32,13 @@
         <div class="number-container">
           <div class="number-row">
             <div class="number">
-              <button class="btn-number btn" id="1">1</button>
+              <button class="btn-number btn" id="7">7</button>
             </div>
             <div class="number">
-              <button class="btn-number btn" id="2">2</button>
+              <button class="btn-number btn" id="8">8</button>
             </div>
             <div class="number">
-              <button class="btn-number btn" id="3">3</button>
+              <button class="btn-number btn" id="9">9</button>
             </div>
           </div>
           <div class="number-row">
@@ -48,39 +54,39 @@
           </div>
           <div class="number-row">
             <div class="number">
-              <button class="btn-number btn" id="7">7</button>
+              <button class="btn-number btn" id="1">1</button>
             </div>
             <div class="number">
-              <button class="btn-number btn" id="8">8</button>
+              <button class="btn-number btn" id="2">2</button>
             </div>
             <div class="number">
-              <button class="btn-number btn" id="9">9</button>
+              <button class="btn-number btn" id="3">3</button>
             </div>
           </div>
           <div class="number-row">
-            <div class="number">
-              <button class="btn-number btn" id="c">C</button>
-            </div>
             <div class="number">
               <button class="btn-number btn" id="0">0</button>
             </div>
             <div class="number">
               <button class="btn-number btn" id="dot">.</button>
             </div>
+            <div class="number">
+              <button class="btn-action btn" id="equal">=</button>
+            </div>
           </div>
         </div>
         <div class="action-container">
           <div class="action">
-            <button class="btn-number btn" id="add">+</button>
+            <button class="btn-action btn" id="add">+</button>
           </div>
           <div class="action">
-            <button class="btn-number btn" id="subtract">-</button>
+            <button class="btn-action btn" id="subtract">-</button>
           </div>
           <div class="action">
-            <button class="btn-number btn" id="multiply">X</button>
+            <button class="btn-action btn" id="multiply">X</button>
           </div>
           <div class="action">
-            <button class="btn-number btn" id="divide">/</button>
+            <button class="btn-action btn" id="divide">/</button>
           </div>
         </div>
       </div>
