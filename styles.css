@@ -51,3 +51,43 @@ textarea {
   line-height: inherit;
 }
 
+.calculator {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    border: 1px solid black;
+}
+
+.brand {
+    /* TODO */
+}
+
+.display-container {
+    display: flex;
+}
+
+.display {
+    /* TODO */
+}
+
+.main-buttons {
+    display: flex;
+}
+
+.number-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.number-row {
+    display: flex;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+}
+
