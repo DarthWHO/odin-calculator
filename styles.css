@@ -61,16 +61,8 @@ textarea {
     border: 1px solid black;
 }
 
-.brand {
-    /* TODO */
-}
-
 .display-container {
     display: flex;
-}
-
-.display {
-    /* TODO */
 }
 
 .main-buttons {
