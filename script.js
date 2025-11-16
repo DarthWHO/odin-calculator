@@ -52,6 +52,11 @@ function handleClick(event) {
         needsClearing = false;
       }
     } else if (element.id == "del") {
+        if (resultDisplay.textContent.length >= 2) {
+            resultDisplay.textContent = resultDisplay.textContent.slice(0, -1)
+        } else if (resultDisplay.textContent.length == 1 && resultDisplay.textContent != 0) {
+            resultDisplay.textContent = 0;
+        }
     } else if (element.id == "equal") {
       if (!needsClearing && firstNumber != 0) {
         secondNumber = Number(resultDisplay.textContent);
@@ -64,6 +69,9 @@ function handleClick(event) {
       }
     } else {
       if (firstNumber != 0) {
+        if (resultDisplay.textContent == firstNumber) {
+            return
+        }
         secondNumber = Number(resultDisplay.textContent);
         resultDisplay.textContent = doMath(
           firstNumber,
